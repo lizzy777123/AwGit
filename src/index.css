@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-emerald: #2ECC71;
+  --color-navy-dark: #051424;
+  --color-navy-light: #122131;
+  --color-navy-border: #1E293B;
+  --color-accent-emerald: #B4FF4E;
+}
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    @apply bg-navy-dark text-[#d4e4fa] antialiased;
+  }
+}
+
+@layer components {
+  .technical-border {
+    @apply border border-navy-border;
+  }
+  
+  .emerald-glow {
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.15);
+  }
+  
+  .emerald-glow-strong {
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.35);
+  }
+
+  .text-glow-emerald {
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+  }
+}
